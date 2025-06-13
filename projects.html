@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Devang Dalal Associates</title>
+  <meta charset="UTF-8" />
+  <title>Projects - Devang Dalal</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -11,49 +11,42 @@
       background: linear-gradient(135deg, #909688, #549ba1, #d4bc9c, #eef3ef, #716456);
     }
     header {
-      background: #034f48;
-      color: white;
-      padding: 20px 30px;
+      background: rgba(255,255,255,0.9);
       display: flex;
       align-items: center;
+      padding: 10px 30px;
       justify-content: space-between;
     }
     .logo {
-      height: 100px;
+      height: 90px;
     }
     nav a {
-      color: white;
-      margin: 0 12px;
+      color: #034f48;
+      margin: 0 15px;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
+      font-size: 16px;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 50px;
-      background-color: rgba(255,255,255,0.9);
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #ffffffcc;
+      padding: 30px;
+      border-radius: 10px;
     }
-    .hero-text {
-      max-width: 60%;
-    }
-    .hero-text h1 {
-      font-size: 36px;
+    h1 {
+      text-align: center;
       color: #034f48;
-      margin-bottom: 20px;
-    }
-    .hero-text p {
-      font-size: 18px;
-      color: #333;
+      margin-bottom: 30px;
     }
     .projects {
       display: flex;
       gap: 30px;
       justify-content: center;
-      margin: 40px 20px;
+      flex-wrap: wrap;
     }
     .project-img {
       width: 30%;
@@ -73,16 +66,15 @@
       background: #034f48;
       color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 15px;
-      margin-top: 30px;
+      padding: 15px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="assets/images/logo_big.png" alt="Devang Dalal Logo" class="logo">
+    <img src="assets/images/logo.png" class="logo" alt="Devang Dalal Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -93,25 +85,20 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to Devang Dalal Associates</h1>
-      <p>Delivering High-Performance, Energy-Efficient MEP Designs – HVAC, Electrical, Plumbing, Fire Safety & IBMS.</p>
+  <div class="container">
+    <h1>Our Key Projects</h1>
+    <div class="projects">
+      <div class="project-img">
+        <img src="assets/images/netflix_mumbai.jpg" alt="Netflix Mumbai Project">
+      </div>
+      <div class="project-img">
+        <img src="assets/images/casamia.jpg" alt="Casamia Project">
+      </div>
+      <div class="project-img">
+        <img src="assets/images/copeland_pune.jpg" alt="Copeland Pune Project">
+      </div>
     </div>
-    <!-- logo is already on left in header -->
-  </section>
-
-  <section class="projects">
-    <div class="project-img">
-      <img src="assets/images/copeland_pune.jpg" alt="Copeland Project">
-    </div>
-    <div class="project-img">
-      <img src="assets/images/netflix_mumbai.jpg" alt="Netflix Project">
-    </div>
-    <div class="project-img">
-      <img src="assets/images/casamia.jpg" alt="Casamia Project">
-    </div>
-  </section>
+  </div>
 
   <footer>
     &copy; 2025 Devang Dalal Associates | All rights reserved
